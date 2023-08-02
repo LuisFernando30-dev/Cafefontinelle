@@ -8,6 +8,7 @@
 }
 nav ul{
     background-color: #8b4d07;
+    margin-top: -4px;
 }
 nav ul li{
 list-style: none;
@@ -24,4 +25,37 @@ nav ul li a{
 }
 nav ul li a:hover{
     background-color: #5a3306;
+}
+article{
+    float:left;
+    margin:15px;
+    padding:5px;
+    width: 800px;
+}
+h2{
+    color:#cf7106;
+    font-size:30px;
+}
+h4{
+    color:#cf7106;
+    font-size:24px;
+}
+.paragrafo li{
+    margin:10px;
+
+}
+.secao-fotos{
+    float:right;
+    margin:10px;
+    padding:5px;
+    width: 300px;
+}
+.foto-apoio{
+    margin: 10px;
+}
+footer{
+    clear:both;
+    text-align: center;
+    background-color: lightgray;
+}
 }
