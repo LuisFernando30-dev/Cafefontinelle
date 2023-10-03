@@ -2,10 +2,21 @@
     margin:0;
     padding:0;
 }
+
+body{
+    font-family: lazord 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+/* logo da página */
+
 .topoprincipal{
     width:100%;
 
 }
+
+/* menu de navegação da página */
+
 nav ul{
     background-color: #8b4d07;
     margin-top: -4px;
@@ -26,36 +37,60 @@ nav ul li a{
 nav ul li a:hover{
     background-color: #5a3306;
 }
+
+/* área de conteúdo da página */
+
 article{
+    background-color: lightgray;
+    border-radius: 12px;
     float:left;
     margin:15px;
-    padding:5px;
-    width: 800px;
+    padding:20px;
+    width: 60%;
 }
+.imgarticle{
+    width:100%;
+}
+
+/* título príncipal da página */
+
 h2{
     color:#cf7106;
     font-size:30px;
+    padding:10px;
 }
+/* título secundário da página */
+
 h4{
     color:#cf7106;
     font-size:24px;
+    padding: 10px;
 }
-.paragrafo li{
+
+p{
+    width:100%;
+    margin-left:10px;
+}
+.paragrafo{
     margin:10px;
+    padding:10px;
 
 }
 .secao-fotos{
+    background-color: lightgray;
+    border-radius: 12px;
     float:right;
     margin:10px;
     padding:5px;
-    width: 300px;
+    max-width:100%;
 }
 .foto-apoio{
     margin: 10px;
+    width:100%;
 }
 footer{
     clear:both;
     text-align: center;
     background-color: lightgray;
-}
+    width:100%;
 }
