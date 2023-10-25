@@ -6,6 +6,7 @@
 body{
     font-family: lazord 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
+
 }                                
 /* logo da página */
 
@@ -24,29 +25,49 @@ nav ul li{
     list-style: none;
     margin:5px;
     padding:4px;
-    display:inline;
-    justify-content: space-evenly;
+    position:relative;
+    display:inline-block;
 }
 nav ul li a{
     color:#ffffff;
     text-decoration: none;
-    margin:0 auto;
+    margin:3px;
     padding:5px;
 }
 nav ul li a:hover{
     background-color:#5a3306;
 
 }
+/*  submenu */
+nav ul li ul{
+    display:none;
+    position:absolute;
+    margin-top: 5px;
+
+}
+nav ul li ul li{
+    width: 236px;
+    
+}
+
+nav li:hover ul{
+    display:block;
+    animation:1.5s  forwards anim;
+
+}
+
 
 /*area de conteúdo da página*/
 main{
     width:100%;
     border-radius:12px;
-    margin:10px 20px 10px 10px;
-    background-color: lightgrey;
+    margin:10px;
 }
 .imgarticle{
     width:70%;
+}
+.conteudo{
+    margin: 15px;
 }
 /* título príncipal da página */
 h2{
@@ -60,16 +81,15 @@ h4{
     font-size:24px;
     padding: 10px;
 }
-p{
-    width:30%;
-    margin-left:10px;
+.eventos{
+    flex-wrap: wrap;
+    
 }
 .paragrafo{
     margin:10px;
     padding:10px;
 }
 .janelaprincipal{
-    background-color: #ffffff;
     border-radius: 12px;
     float: left;
     width:100%;
@@ -80,53 +100,36 @@ p{
     padding: 15px;
 }
 .janelasecundaria{
-    background-color: #ffffff;
     border-radius:12px;
     float:right;
     margin: 5px 15px 0 0;
     padding:15px;
-    width:100%;
-    height:0 auto;
-    min-width: none;
+    min-width: 200px;
     max-width: 300px;
+}
+@keyframes anim{
+    100%{
+        transform:rotateX(0);
+    }
+    0%{
+        transform:rotatex(90deg);
+    }
 }
 .foto-apoio{
     margin: 10px;
     width:40%;
 }
+.cont{
+    margin-left:25px;
+}
 hr{
     clear:both;
 }
-
 footer{
     clear:both;
     padding: 5px;
     text-align: center;
-    background-color:lightgray;
     width:100%;
+    height: 100%;
 }
-/*tela de 2560 pixels 4k*/
 
-@media(width:2560px){
-    body{
-    font-size: 40px;
-}
-.janelaprincipal{
-    padding: 20px;
-    max-width:60%;
-}
-.janelasecundaria{
-    width:100%;
-    max-width: 30%;
-    float:right;
-}
-.imgarticle{
-    width:50%;
-}
-h2{
-    font-size: 90px;
-}
-h4{
-    font-size: 70px;
-}
-}
