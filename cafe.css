@@ -52,7 +52,7 @@ nav ul li ul li{
 
 nav li:hover ul{
     display:block;
-    animation:1.5s  forwards anim;
+    animation:1s  forwards anim;
 
 }
 
